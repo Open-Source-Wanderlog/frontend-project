@@ -9,18 +9,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgOptimizedImage} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { ToolbarContentComponent } from './wanderlog/component/toolbar-content/toolbar-content.component';
 import {MatToolbar} from "@angular/material/toolbar";
-import { BodyContentComponent } from './wanderlog/pages/Homepages/body-content/body-content.component';
 import {MatButton} from "@angular/material/button";
+import {ToolbarContentComponent} from "./wanderlog/components/toolbar-content/toolbar-content.component";
+import { BodyContentComponent } from './wanderlog/pages/homepages/body-content/body-content.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingpageComponent,
-    ToolbarContentComponent,
-    BodyContentComponent
-  ],
+    declarations: [
+        AppComponent,
+        LandingpageComponent,
+        ToolbarContentComponent,
+        ToolbarContentComponent,
+        BodyContentComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
