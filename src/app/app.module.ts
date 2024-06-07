@@ -12,6 +12,11 @@ import { LoginComponent } from './wanderlog/pages/login/login.component';
 import { RegisterComponent } from './wanderlog/pages/register/register.component';
 import { ForgotPasswordComponent } from './wanderlog/pages/forgot-password/forgot-password.component';
 import {HttpClientModule} from "@angular/common/http";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatToolbar} from "@angular/material/toolbar";
+import { BodyContentComponent } from './wanderlog/pages/Homepages/body-content/body-content.component';
+import {MatButton} from "@angular/material/button";
+import {ToolbarContentComponent} from "./wanderlog/components/toolbar-content/toolbar-content.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +24,9 @@ import {HttpClientModule} from "@angular/common/http";
     LandingpageComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ToolbarContentComponent,
+    BodyContentComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +34,14 @@ import {HttpClientModule} from "@angular/common/http";
     FontAwesomeModule,
     NgOptimizedImage,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatToolbar,
+    MatButton
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

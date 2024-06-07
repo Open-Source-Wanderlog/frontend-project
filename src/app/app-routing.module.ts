@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './public/pages/landingpage/landingpage.component';
-import {LoginComponent} from "./wanderlog/pages/login/login.component";
-import {RegisterComponent} from "./wanderlog/pages/register/register.component";
-import {ForgotPasswordComponent} from "./wanderlog/pages/forgot-password/forgot-password.component";
+import { LoginComponent } from './wanderlog/pages/login/login.component';
+import { RegisterComponent } from './wanderlog/pages/register/register.component';
+import { ForgotPasswordComponent } from './wanderlog/pages/forgot-password/forgot-password.component';
+import { BodyContentComponent } from './wanderlog/pages/Homepages/body-content/body-content.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LandingpageComponent
   },
-  { path: 'login',
+  {
+    path: 'login',
     component: LoginComponent
   },
   {
@@ -20,6 +22,10 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent
+  },
+  {
+    path: 'home',
+    component: BodyContentComponent
   }
 ];
 
