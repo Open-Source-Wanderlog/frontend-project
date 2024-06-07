@@ -1,0 +1,14 @@
+.my-toolbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    background-color: #EEF5FF;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-toolbar {
+    flex-direction: column;
+      box-sizing: content-box;
+  }
+}

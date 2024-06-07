@@ -1,0 +1,53 @@
+<app-toolbar-explore></app-toolbar-explore>
+
+<div class="button-container">
+    <button mat-button>
+        <a routerLink="/explore-trip">Flight</a>
+    </button>
+
+    <button mat-button>Lodging</button>
+    <button mat-button>
+        <a routerLink="/explore-attractions">Attractions</a>
+    </button>
+</div>
+
+
+<div class="columns-container">
+    <div class="filters-column">
+        <h6>Lodging:</h6>
+        <p>Type the lodging:</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Economic</mat-radio-button>
+                <mat-radio-button value="2">Deluxe</mat-radio-button>
+                <mat-radio-button value="3">Fast</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <p>Available rooms</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">1</mat-radio-button>
+                <mat-radio-button value="2">2</mat-radio-button>
+                <mat-radio-button value="3">3</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <p>Company</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Hogar</mat-radio-button>
+                <mat-radio-button value="2">Airlines</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    <div class="details-column">
+        <div>
+            <h2>Travel Destinations</h2>
+            <div *ngFor="let destination of hotel">
+                {{ destination.name }}
+                <img class="destination-image" [src]="destination.image_url" alt="{{ destination.name }}">
+            </div>
+        </div>
+
+
+    </div>
+</div>

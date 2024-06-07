@@ -1,0 +1,58 @@
+<app-toolbar-explore></app-toolbar-explore>
+
+<div class="button-container">
+    <button mat-button>Flight</button>
+    <button mat-button>
+        <a routerLink="/explore-lodging">Lodging</a>
+    </button>
+    <button mat-button>
+        <a routerLink="/explore-attractions">Attractions</a>
+    </button>
+</div>
+
+
+<div class="columns-container">
+    <div class="filters-column">
+        <h6>Filters:</h6>
+        <p>Type the flight:</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Economic</mat-radio-button>
+                <mat-radio-button value="2">Deluxe</mat-radio-button>
+                <mat-radio-button value="3">Fast</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <p>Available seats</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">1</mat-radio-button>
+                <mat-radio-button value="2">2</mat-radio-button>
+                <mat-radio-button value="3">3</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <p>Company</p>
+        <div class="option-container">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Despegar</mat-radio-button>
+                <mat-radio-button value="2">Airlines</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    <div class="details-column">
+        <div>
+            <h2>Travel Destinations</h2>
+            <div *ngFor="let destination of travelDestinations">
+                {{ destination.name }}
+                <img class="destination-image" [src]="destination.image_url" alt="{{ destination.name }}">
+            </div>
+        </div>
+        <div>
+            <h2>Fly Company</h2>
+            <div *ngFor="let company of flyCompany">
+                {{ company.name }}
+                <img class="company-image" [src]="company.image_url" alt="{{ company.name }}">
+            </div>
+        </div>
+
+    </div>
+</div>

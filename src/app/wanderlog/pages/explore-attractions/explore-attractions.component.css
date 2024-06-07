@@ -1,0 +1,83 @@
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+.button-container button:hover {
+    background-color: #0A5DCB;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+
+.button-container button {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #D0E4FF;
+    border-radius: 0;
+}
+
+/* explore-trip.component.css */
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.filters-column {
+    flex-basis: 35%;
+    padding: 50px;
+}
+.details-column {
+    flex-basis: 65%;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.filters-column {
+    background-color: #D0E4FF;
+}
+
+.details-column {
+    background-color: #8EBEFF;
+}
+mat-radio-group {
+    display: flex;
+    flex-direction: column;
+}
+.destination-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.company-image {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .columns-container {
+        flex-direction: column;
+    }
+    .filters-column {
+        flex-basis: 100%;
+    }
+    .details-column {
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+}
+a {
+    text-decoration: none;
+}
