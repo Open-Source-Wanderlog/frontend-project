@@ -8,18 +8,26 @@ import { LandingpageComponent } from './public/pages/landingpage/landingpage.com
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgOptimizedImage} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './wanderlog/pages/login/login.component';
+import { RegisterComponent } from './wanderlog/pages/register/register.component';
+import { ForgotPasswordComponent } from './wanderlog/pages/forgot-password/forgot-password.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     NgOptimizedImage,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
