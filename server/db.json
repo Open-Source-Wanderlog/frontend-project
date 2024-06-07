@@ -4,25 +4,25 @@
             "id": 1,
             "name": "Paris",
             "description": "City of Light",
-            "image_url": "https://example.com/paris.jpg"
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/paris.jpeg?raw=true"
         },
         {
             "id": 2,
             "name": "Rome",
             "description": "Eternal City",
-            "image_url": "https://example.com/rome.jpg"
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/rome.jpg?raw=true"
         },
         {
             "id": 3,
             "name": "Tokyo",
             "description": "Land of the Rising Sun",
-            "image_url": "https://example.com/tokyo.jpg"
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/tokyo.jpeg?raw=true"
         },
         {
             "id": 4,
             "name": "New York",
             "description": "The Big Apple",
-            "image_url": "https://example.com/ny.jpg"
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/newYork.jpg?raw=true"
         }
     ],
     "touristic_attraction": [
@@ -31,7 +31,7 @@
             "travel_destinations_id": 1,
             "name": "Eiffel Tower",
             "description": "Iconic landmark",
-            "image_url": "https://example.com/eiffel.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/torre.jpg?raw=true",
             "price": 25.0
         },
         {
@@ -39,7 +39,7 @@
             "travel_destinations_id": 2,
             "name": "Colosseum",
             "description": "Ancient amphitheater",
-            "image_url": "https://example.com/colosseum.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/colosseum.jpg?raw=true",
             "price": 15.0
         },
         {
@@ -47,7 +47,7 @@
             "travel_destinations_id": 3,
             "name": "Shibuya Crossing",
             "description": "Famous intersection",
-            "image_url": "https://example.com/shibuya.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/shibuya.jpg?raw=true",
             "price": 0.0
         },
         {
@@ -55,7 +55,7 @@
             "travel_destinations_id": 4,
             "name": "Statue of Liberty",
             "description": "Symbol of freedom",
-            "image_url": "https://example.com/liberty.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/statueOfLiberty.jpg?raw=true",
             "price": 20.0
         }
     ],
@@ -65,7 +65,7 @@
             "travel_destinations_id": 1,
             "name": "Air France",
             "description": "Leading airline in France",
-            "image_url": "https://example.com/airfrance.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/plane2.png?raw=true",
             "price": 500.0
         },
         {
@@ -73,7 +73,7 @@
             "travel_destinations_id": 2,
             "name": "Alitalia",
             "description": "National airline of Italy",
-            "image_url": "https://example.com/alitalia.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/plane1.png?raw=true",
             "price": 450.0
         },
         {
@@ -81,7 +81,7 @@
             "travel_destinations_id": 3,
             "name": "Japan Airlines",
             "description": "Leading airline in Japan",
-            "image_url": "https://example.com/jal.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/plane3.png?raw=true",
             "price": 700.0
         },
         {
@@ -89,7 +89,7 @@
             "travel_destinations_id": 4,
             "name": "Delta Airlines",
             "description": "Major American airline",
-            "image_url": "https://example.com/delta.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/plane2.png?raw=true",
             "price": 600.0
         }
     ],
@@ -98,7 +98,7 @@
             "id": 1,
             "name": "Hotel de Paris",
             "description": "Luxury hotel in Paris",
-            "image_url": "https://example.com/hotelparis.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/hparis1.jpg?raw=true",
             "price": 300.0,
             "travel_destinations_id": 1
         },
@@ -106,7 +106,7 @@
             "id": 2,
             "name": "Hotel Roma",
             "description": "Boutique hotel in Rome",
-            "image_url": "https://example.com/hotelrome.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/hroma1.jpg?raw=true",
             "price": 250.0,
             "travel_destinations_id": 2
         },
@@ -114,7 +114,7 @@
             "id": 3,
             "name": "Tokyo Inn",
             "description": "Modern hotel in Tokyo",
-            "image_url": "https://example.com/tokyoinn.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/htokyo.jpg?raw=true",
             "price": 200.0,
             "travel_destinations_id": 3
         },
@@ -122,7 +122,7 @@
             "id": 4,
             "name": "NYC Suites",
             "description": "Elegant hotel in New York",
-            "image_url": "https://example.com/nycsuites.jpg",
+            "image_url": "https://github.com/Open-Source-Wanderlog/images-front/blob/main/hnewYork.jpg?raw=true",
             "price": 350.0,
             "travel_destinations_id": 4
         }

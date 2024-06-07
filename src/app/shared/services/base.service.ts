@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BaseService {
-  private apiUrl = 'http://localhost:3000';  // URL to web api
+  protected apiUrl = 'http://localhost:3001';  // URL to web api
 
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) { }
 
   register(user: any): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/users`, user);

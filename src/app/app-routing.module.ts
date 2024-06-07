@@ -5,6 +5,9 @@ import { LoginComponent } from './wanderlog/pages/login/login.component';
 import { RegisterComponent } from './wanderlog/pages/register/register.component';
 import { ForgotPasswordComponent } from './wanderlog/pages/forgot-password/forgot-password.component';
 import { BodyContentComponent } from './wanderlog/pages/Homepages/body-content/body-content.component';
+import {ExploreTripComponent} from "./wanderlog/pages/explore-trip/explore-trip.component";
+import {ExploreLodgingComponent} from "./wanderlog/pages/explore-lodging/explore-lodging.component";
+import {ExploreAttractionsComponent} from "./wanderlog/pages/explore-attractions/explore-attractions.component";
 
 const routes: Routes = [
   {
@@ -26,6 +29,18 @@ const routes: Routes = [
   {
     path: 'home',
     component: BodyContentComponent
+  },
+  {
+        path: 'explore-trip',
+        component: ExploreTripComponent
+  },
+  {
+        path: 'explore-lodging',
+        component: ExploreLodgingComponent
+  },
+  {
+    path: 'explore-attractions',
+    component: ExploreAttractionsComponent
   }
 ];
 
