@@ -22,6 +22,10 @@ import { ToolbarExploreComponent } from './wanderlog/components/toolbar-explore/
 import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
 import { ExploreLodgingComponent } from './wanderlog/pages/explore-lodging/explore-lodging.component';
 import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractions/explore-attractions.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatCardModule} from "@angular/material/card";
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { SubscriptionComponent } from './components/subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,9 @@ import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractio
     ExploreTripComponent,
     ToolbarExploreComponent,
     ExploreLodgingComponent,
-    ExploreAttractionsComponent
+    ExploreAttractionsComponent,
+    UserProfileComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,9 @@ import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractio
     MatToolbar,
     MatButton,
     MatRadioButton,
-    MatRadioGroup
+    MatRadioGroup,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()
