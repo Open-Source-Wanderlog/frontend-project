@@ -1,0 +1,33 @@
+<app-toolbar-content></app-toolbar-content>
+
+
+<div class="result-container">
+
+    <div class="result-item-destination" *ngIf="destination">
+        <h3>{{ destination.name }}</h3>
+        <img class="result-image-destination" [src]="destination.image_url" alt="{{ destination.name }}">
+
+    </div>
+
+    <div class="result-item-flyCompany" *ngIf="flyCompany">
+        <h3>{{ flyCompany.name }}</h3>
+        <img class="result-image-fly" [src]="flyCompany.image_url" alt="{{ flyCompany.name }}">
+        <p>Price: {{ flyCompany.price}}</p>
+    </div>
+
+    <div class="result-item-hotel" *ngIf="hotel">
+        <h3>{{ hotel.name }}</h3>
+        <img class="result-image-hotel" [src]="hotel.image_url" alt="{{ hotel.name }}">
+        <p>Price: {{ hotel.price }}</p>
+    </div>
+
+    <div class="result-item-attraction" *ngIf="attraction">
+        <h3>{{ attraction.name }}</h3>
+        <p>{{ attraction.description }}</p>
+        <img class="result-image-attraction" [src]="attraction.image_url" alt="{{ attraction.name }}">
+        <p>Price: {{ attraction.price }}</p>
+    </div>
+    <div class="total-cost">
+        <h6>Total Cost: {{ totalCost }}</h6>
+    </div>
+</div>

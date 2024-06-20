@@ -1,0 +1,37 @@
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #8EBEFF;
+    padding: 20px;
+    height: 100vh;
+    justify-items: center;
+}
+
+.result-item-destination, .result-item-flyCompany, .result-item-hotel, .result-item-attraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result-image-destination, .result-image-hotel, .result-image-attraction {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.result-image-destination, .result-image-hotel, .result-image-attraction,.result-image-fly {
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.result-image-fly {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
