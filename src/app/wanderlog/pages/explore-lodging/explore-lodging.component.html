@@ -11,6 +11,9 @@
     </button>
 </div>
 
+<div class="search-container">
+    <input [(ngModel)]="searchQuery" (input)="search()" placeholder="Search hotels">
+</div>
 
 <div class="columns-container">
     <div class="filters-column">
@@ -41,10 +44,12 @@
     </div>
     <div class="details-column">
         <div>
-            <h2>Travel Destinations</h2>
-            <div *ngFor="let destination of hotel">
+            <h2>Destination Hotel</h2>
+            <div class="center" *ngFor="let destination of hotel" [ngClass]="{'selected': destination === selectedHotel}">
                 {{ destination.name }}
                 <img class="destination-image" [src]="destination.image_url" alt="{{ destination.name }}">
+                <p>Price: {{ destination.price }}</p>
+                <button mat-button (click)="selectHotel(destination)">{{destination === selectedHotel ? 'Discard' : 'Select'}}</button>
             </div>
         </div>
 
