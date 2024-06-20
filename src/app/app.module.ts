@@ -7,7 +7,7 @@ import { LandingpageComponent } from './public/pages/landingpage/landingpage.com
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgOptimizedImage} from "@angular/common";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './wanderlog/pages/login/login.component';
 import { RegisterComponent } from './wanderlog/pages/register/register.component';
 import { ForgotPasswordComponent } from './wanderlog/pages/forgot-password/forgot-password.component';
@@ -22,6 +22,7 @@ import { ToolbarExploreComponent } from './wanderlog/components/toolbar-explore/
 import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
 import { ExploreLodgingComponent } from './wanderlog/pages/explore-lodging/explore-lodging.component';
 import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractions/explore-attractions.component';
+import { TripResultComponent } from './wanderlog/pages/trip-result/trip-result.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractio
     ExploreTripComponent,
     ToolbarExploreComponent,
     ExploreLodgingComponent,
-    ExploreAttractionsComponent
+    ExploreAttractionsComponent,
+    TripResultComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { ExploreAttractionsComponent } from './wanderlog/pages/explore-attractio
     MatToolbar,
     MatButton,
     MatRadioButton,
-    MatRadioGroup
+    MatRadioGroup,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
