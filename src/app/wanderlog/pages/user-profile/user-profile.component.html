@@ -1,0 +1,15 @@
+<app-toolbar-content></app-toolbar-content>
+<div *ngIf="user">
+    <h1>{{ user.full_name }}</h1>
+    <p>Email: {{ user.email }}</p>
+    <p>Phone: {{ user.phone }}</p>
+    <button routerLink="/subscription" mat-button>Cambiarte a premium?</button>
+</div>
+<div *ngIf="subscriptions">
+    <h1>Current subscription </h1>
+    <div *ngFor="let subscription of subscriptions">
+        <p>Plan ID: {{ subscription.planDetails.name}}</p>
+        <p>Start Date: {{ subscription.start_date }}</p>
+        <p>End Date: {{ subscription.end_date }}</p>
+    </div>
+</div>
