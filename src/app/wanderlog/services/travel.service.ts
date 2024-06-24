@@ -24,4 +24,20 @@ export class TravelService extends BaseService {
   getTouristicAttraction(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/touristic_attraction`);
   }
+
+  getUser(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/users/${id}`);
+  }
+  
+  getUserSubscriptions(userId: number): Observable<any> {
+    return this.http.get(`${this.apiUrl}/plans_payments?users_id=${userId}`);
+  }
+  
+  getPlanDetails(planId: number): Observable<any> {
+    return this.http.get(`${this.apiUrl}/plans/${planId}`);
+  }
+  
+  getPlans(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/plans`);
+  }
 }
