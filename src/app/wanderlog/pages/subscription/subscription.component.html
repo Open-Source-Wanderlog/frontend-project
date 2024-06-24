@@ -1,0 +1,11 @@
+<app-toolbar-content></app-toolbar-content>
+<div *ngIf="plans">
+    <h1>Planes</h1>
+    <ul>
+        <li *ngFor="let plan of plans">
+            Plan Name: {{ plan.name }}
+            Price: {{ plan.price }}
+        </li>
+    </ul>
+    <button mat-button>Cambiar a premium</button>
+</div>
