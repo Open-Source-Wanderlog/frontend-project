@@ -8,6 +8,8 @@ import { BodyContentComponent } from './wanderlog/pages/Homepages/body-content/b
 import {ExploreTripComponent} from "./wanderlog/pages/explore-trip/explore-trip.component";
 import {ExploreLodgingComponent} from "./wanderlog/pages/explore-lodging/explore-lodging.component";
 import {ExploreAttractionsComponent} from "./wanderlog/pages/explore-attractions/explore-attractions.component";
+import {UserProfileComponent} from "./wanderlog/pages/user-profile/user-profile.component";
+import {SubscriptionComponent} from "./wanderlog/pages/subscription/subscription.component";
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'explore-attractions',
     component: ExploreAttractionsComponent
+  },
+  {
+    path: 'user-profile',
+    component: UserProfileComponent
+  },
+  {
+    path: 'subscription',
+    component: SubscriptionComponent
   }
 ];
 
